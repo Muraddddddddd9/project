@@ -1,6 +1,6 @@
 import { Navbar } from './index'
 
-const Social = () => {
+const Company = () => {
     return (
         <div className="main-container">
             <div className="info-main-container">
@@ -10,4 +10,4 @@ const Social = () => {
     );
 }
 
-export default Social;
+export default Company;

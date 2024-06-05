@@ -1,36 +1,34 @@
 import { BrowserRouter } from 'react-router-dom';
-
-import { register } from 'swiper/element/bundle';
-import { Main, Info, Social } from './index'
-register();
+import { Main, Info, Social, Company } from './index'
+import { Navigation, Pagination } from 'swiper/modules';
 
 import "../styles/swiper.css"
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
-const Swiper = () => {
-
+const SwiperContent = () => {
   return (
     <div className="swiper-style" style={{ width: '100vw', height: '100vh' }}>
-      <swiper-container
-        slides-per-view="1"
-        speed="500"
-        loop="true"
-        pagination="true"
-        navigation="true"
-        keyboard="true"
+      <Swiper
+        modules={[Navigation, Pagination]}
+        slidesPerView={1}
+        speed={500}
+        navigation
+        pagination={{ clickable: true }}
         style={{ width: '100%', height: '100%' }}
       >
         <BrowserRouter>
-          <swiper-slide> <Main /> </swiper-slide>
-          <swiper-slide> <Info /> </swiper-slide>
-          <swiper-slide> <Social /> </swiper-slide>
+          <SwiperSlide> <Main /> </SwiperSlide>
+          <SwiperSlide> <Info /> </SwiperSlide>
+          <SwiperSlide> <Company /> </SwiperSlide>
+          <SwiperSlide> <Social /> </SwiperSlide>
         </BrowserRouter>
-      </swiper-container>
+      </Swiper>
     </div>
   );
-}
+};
 
-export default Swiper;
+export default SwiperContent;

@@ -1,10 +1,10 @@
 import './App.css';
-import { Swiper } from './components'
+import { SwiperContent } from './components'
 
 const App = () => {
   return (
     <>
-      <Swiper />
+     <SwiperContent />
     </>
   );
 }

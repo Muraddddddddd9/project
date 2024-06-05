@@ -1,26 +1,25 @@
-swiper-container::part(bullet) {
-    background-color: rgba(229, 255, 0, 0);
-    border: 1px solid white;
-    width: 7px;
-    height: 7px;
+.swiper-pagination-bullet {
+    border: 1px solid white !important;
+    width: 7px !important;
+    height: 7px !important;
 }
 
-swiper-container::part(bullet-active) {
-    background-color: rgb(139, 139, 139);
-    border: 1px solid rgb(138, 138, 138);
-    width: 7px;
-    height: 7px;
+.swiper-pagination-bullet-active {
+    background-color: rgb(139, 139, 139) !important;
+    border: 1px solid rgb(138, 138, 138) !important;
 }
 
-swiper-container::part(button-next),
-swiper-container::part(button-prev) {
-    width: 4vw;
-    color: white;
+.swiper-button-next,
+.swiper-button-prev {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid white !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+    padding: 20px !important;
 }
 
-@media screen and (max-width: 500px) {
-    swiper-container::part(button-next),
-    swiper-container::part(button-prev) {
-        width: 12px;
-    }
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: black !important; 
 }
