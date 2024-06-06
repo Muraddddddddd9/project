@@ -1,0 +1,23 @@
+nav {
+    width: 55%;
+    color: black;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul svg {
+    width: 65px;
+    height: 59px;
+}
+
+ul li {
+    margin-right: 13px;
+    cursor: pointer;
+}

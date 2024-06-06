@@ -1,15 +1,33 @@
 import { Logo } from "../assets/logo";
+import '../styles/navbar.css'
 
 const Navbar = () => {
     return (
         <nav>
-            <logo />
             <ul>
                 <li>
-                    <Logo /> ООО "ТелеСистем"</li>
-                <li>Инфа</li>
-                <li>Компании</li>
-                <li>Сети</li>
+                    <div style={{
+                        display: "flex",
+                        textAlign: "center",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginLeft: "20px"
+                    }}>
+                        <Logo />
+                        ООО "ТелеСистем"
+                    </div>
+                </li>
+                <div style={{
+                    display: "flex",
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginRight: "20px"
+                }}>
+                    <li>Инфа</li>
+                    <li>Компании</li>
+                    <li>Сети</li>
+                </div>
             </ul>
         </nav>
     );
